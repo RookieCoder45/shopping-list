@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <div className={styles.inputField}>
-        <input type="text" placeholder="Add an item" onChange={(e) => {setItem(e.target.value)}}/>
+        <input type="text" value={item} placeholder="Add an item" onChange={(e) => {setItem(e.target.value)}}/>
         <button type="submit" onClick={() => saveItemToList()}>Add +</button>
       </div>
       <div className={styles.list}>
